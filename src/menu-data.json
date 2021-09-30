@@ -1,0 +1,128 @@
+[
+    { 
+        "tipo":"desayuno",
+        "id": 1,
+        "producto": "Café Americano",
+        "precio": 5,
+        "imagen": ""
+    },
+    {
+        "tipo":"desayuno",
+        "id": 2,
+        "producto": "Café con leche",
+        "precio": 7,
+        "imagen": ""
+    },
+    {
+        "tipo":"desayuno",
+        "id": 3,
+        "producto": "Sandwich de jamón y queso",
+        "precio": 10,
+        "imgagen": ""
+    },
+    {
+        "tipo":"desayuno",
+        "id": 4,
+        "producto": "Jugo natural",
+        "precio": 7,
+        "imagen":""
+    },
+    {
+        "tipo":"almuerzo",
+        "id": 5,
+        "producto": "Hamburguesa Pollo Simple",
+        "precio": 10,
+        "imagen":""
+    },
+    {
+        "tipo":"almuerzo",
+        "id": 6,
+        "product": "Hamburguesa Vacuno Simple",
+        "precio": 10,
+        "imagen":""
+    },
+    {
+        "tipo":"almuerzo",
+        "id": 7,
+        "product": "Hamburguesa Vegetariana Simple",
+        "precio": 10,
+        "imagen":""
+    },
+    {
+        "tipo":"almuerzo",
+        "id": 8,
+        "producto": "Hamburguesa Pollo Doble",
+        "precio": 15,
+        "imagen":""
+    },
+    {
+        "tipo":"almuerzo",
+        "id": 9,
+        "producto": "Hamburguesa Vacuno Doble",
+        "precio": 15,
+        "imagen":""
+    },
+    {
+        "tipo":"almuerzo",
+        "id": 10,
+        "producto": "Hamburguesa Vegetariana Doble",
+        "precio": 15,
+        "imagen":""
+    },
+    {
+        "tipo":"extra",
+        "id": 11,
+        "producto": "Huevo",
+        "precio": 1,
+        "imagen":""
+    },
+    {
+        "tipo":"extra",
+        "id": 12,
+        "producto": "Queso",
+        "precio": 1, 
+        "imagen":""
+    },
+    {
+        "tipo":"acompañamientos",
+        "id": 13,
+        "producto": "Papas Fritas",
+        "precio": 5,
+        "imagen":""
+    },
+    {
+        "tipo":"acompañamientos",
+        "id": 14,
+        "producto": "Onion Rings",
+        "precio": 5,
+        "imagen":""
+    },
+    {
+        "tipo":"bebida",
+        "id": 15,
+        "producto": "Agua 500ml",
+        "precio": 5,
+        "imagen":""
+    },
+    {
+        "tipo":"bebida",
+        "id": 16,
+        "producto": "Agua 750ml",
+        "precio": 7,
+        "imagen":""
+    },
+    {
+        "tipo":"bebida",
+        "id": 17,
+        "producto": "Bebida 500ml",
+        "precio": 7,
+        "imagen":""
+    },
+    {
+        "tipo":"bebida",
+        "id": 18,
+        "producto": "Bebida 750ml",
+        "precio": 10,
+        "imagen":""
+    }
+]
