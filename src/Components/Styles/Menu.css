@@ -5,8 +5,9 @@ background-color: var(--bg-main);
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
-width: 650px;
-
+max-width: 650px;
+height: 560px;
+overflow-y: scroll;
 
 }
 
@@ -23,13 +24,14 @@ width: 650px;
   letter-spacing: 0em;
   text-align: center;
   margin: 10px 5px;
+  padding: 5px;
 
 }
 
 .card-body{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--bg-card);
   width: 150px;
@@ -39,8 +41,9 @@ width: 650px;
 }
 
 .card-img{
-  width: 80px;
-  height: 110px;;
+ width: 70px;
+ border-radius: 38%;
+ opacity: 70%;
 }
 
 .card-plate{
@@ -48,6 +51,7 @@ width: 650px;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
+  font-weight: 600;
 }
 
 .card-price{

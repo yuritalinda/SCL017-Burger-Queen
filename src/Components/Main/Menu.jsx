@@ -1,31 +1,26 @@
-import '../Styles/menu.css'
+import data from './menu-data.js'
+import '../Styles/Menu.css'
 import React  from "react";
 import { useState } from "react";
 import {
   CardImg, CardBody,
   CardTitle,
-  Button,
   CardSubtitle
 } from 'reactstrap';
-import axios from "axios";
+
+
 
 
 export default function Menu (){
 
   const [menu, setMenu] = useState([]);
+  const dataFile = data.menu;
+  
 
 
   const getData = ()=>{
-    axios.get('https://jsonplaceholder.typicode.com/albums/1/photos')
-    .then(response=>{
-     
-      setMenu(response.data) //".data" en este caso es una propiedad de AXIOS, no tienen nada que ver con el arreglo de datos.
-      
-      
-    })
-    .catch(error=>{
-      console.log(error);
-    });
+   
+    setMenu(dataFile);
 
   }
 
@@ -38,19 +33,76 @@ export default function Menu (){
 
   return(
     <main className="main-container" >
-       <Button block className="menu-div" onClick={ getData }>Desayuno</Button> 
+       <button type="text" onClick={ getData }> Boton</button> 
+       <div className="menu-div">Desayuno</div>
+
+        {menu.filter(menu => menu.tipo === "desayuno" ).map((dato) => (
+
+            <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
+            <CardTitle className="card-plate">{dato.producto}</CardTitle>
+            <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
+            </CardBody>
+
+
+            ))}
+
+       <div className="menu-div">Almuerzo / Cena</div>
+
+        {menu.filter(menu => menu.tipo === "almuerzo" ).map((dato) => (
+
+            <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
+            <CardTitle className="card-plate">{dato.producto}</CardTitle>
+            <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
+            </CardBody>
+
+
+            ))}
+
+        <div className="menu-div">Extras</div>
+
+        {menu.filter(menu => menu.tipo === "extra" ).map((dato) => (
+
+            <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
+            <CardTitle className="card-plate">{dato.producto}</CardTitle>
+            <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
+            </CardBody>
+
+
+            ))}
+
+        <div className="menu-div">Acompañamientos</div>
+
+        {menu.filter(menu => menu.tipo === "acompañamientos" ).map((dato) => (
+
+            <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
+            <CardTitle className="card-plate">{dato.producto}</CardTitle>
+            <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
+            </CardBody>
+
+
+            ))}
+
+       <div className="menu-div">Bebidas</div>
+
+        {menu.filter(menu => menu.tipo === "bebida" ).map((dato) => (
+
+            <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
+            <CardTitle className="card-plate">{dato.producto}</CardTitle>
+            <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
+            </CardBody>
+
+
+            ))}
+
       
-      {menu.map((dato) => (
-        <CardBody 
-        onClick={ addPlate }
-        className="card-body"  
-        key={dato.id}
-        >
-        <CardImg className="card-img" src={dato.thumbnailUrl}></CardImg>
-        <CardTitle className="card-plate">Titulo del plato</CardTitle>
-        <CardSubtitle className="card-price">$ 3.50</CardSubtitle>
-        </CardBody>
-      ))}
+
+
+      
 
     </main>
   )
