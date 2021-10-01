@@ -17,14 +17,11 @@ export default function Menu (){
 
   useEffect(() => {
     const newState = setMenu(data.menu)
-    return () => {
-      newState(); //preguntar por que solo corre cuando hago de newState una funcion.
-    }
+    return (newState) 
   }, [])
    
-
   const addPlate = ()=>{
-    alert('Has agregado un plato')
+    alert('Has agregado un plato al menu')
   }
 ;
 
