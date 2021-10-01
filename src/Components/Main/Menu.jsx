@@ -1,6 +1,6 @@
 import data from './menu-data.js'
 import '../Styles/Menu.css'
-import React  from "react";
+import React, { useEffect }  from "react";
 import { useState } from "react";
 import {
   CardImg, CardBody,
@@ -14,26 +14,23 @@ import {
 export default function Menu (){
 
   const [menu, setMenu] = useState([]);
-  const dataFile = data.menu;
-  
 
-
-  const getData = ()=>{
+  useEffect(() => {
+    const newState = setMenu(data.menu)
+    return () => {
+      newState(); //preguntar por que solo corre cuando hago de newState una funcion.
+    }
+  }, [])
    
-    setMenu(dataFile);
-
-  }
 
   const addPlate = ()=>{
     alert('Has agregado un plato')
   }
-
-
 ;
 
   return(
     <main className="main-container" >
-       <button type="text" onClick={ getData }> Boton</button> 
+ 
        <div className="menu-div">Desayuno</div>
 
         {menu.filter(menu => menu.tipo === "desayuno" ).map((dato) => (
