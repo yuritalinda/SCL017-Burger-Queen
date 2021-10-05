@@ -6,8 +6,9 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
 max-width: 650px;
-height: 560px;
+height: 540px;
 overflow-y: scroll;
+border: 10px solid var(--bg-main);
 
 }
 
