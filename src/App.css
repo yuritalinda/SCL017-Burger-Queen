@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Barlow Medium' , sans-serif;
   src:  url('/public/fonts/Barlow-Medium.ttf') format('truetype');
-  font-style: normal;
+
 }
 
 @font-face {
   font-family: 'Barlow SemiBold' , sans-serif;
   src:  url('/public/fonts/Barlow-SemiBold.ttf') format('truetype');
-  font-style: normal;
+
 
 }
 

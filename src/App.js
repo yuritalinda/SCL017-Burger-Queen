@@ -1,5 +1,5 @@
 import './index.css';
-import OrderList from './Components/Aside/OrderList';
+import Aside from './Components/Aside/Aside';
 import Header from './Components/Main/Header';
 import Menu from './Components/Main/Menu';
 import Navbar from './Components/Main/Navbar';
@@ -16,7 +16,7 @@ function App() {
     </main>
 
     <aside className="app-aside" >
-    <OrderList />
+    <Aside />
     </aside>
     
     

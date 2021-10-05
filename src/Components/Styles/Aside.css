@@ -1,0 +1,28 @@
+@import url('/src/index.css');
+
+.aside-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 380px;
+  height: 700px;
+}
+
+.aside-welcome-header{
+  background-color: var(--bg-nav-btn);
+  color: var(--text-light);
+  width: 80%;
+  height: 134px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 10%;
+
+}
+
+.aside-welcome-logo img{
+  width: 100%;
+  height: 450px;
+  border-radius: 100px;
+}

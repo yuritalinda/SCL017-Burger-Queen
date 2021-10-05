@@ -31,17 +31,17 @@ overflow-y: scroll;
 .card-body{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--bg-card);
-  width: 150px;
-  height: 190px;
+  width: 23%;
+  height: 35%;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 
 .card-img{
- width: 70px;
+ width: 40%;
  border-radius: 38%;
  opacity: 70%;
 }
