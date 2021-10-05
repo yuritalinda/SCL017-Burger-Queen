@@ -1,0 +1,67 @@
+@import url('/src/index.css');
+
+.main-container{
+background-color: var(--bg-main);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+max-width: 650px;
+height: 540px;
+overflow-y: scroll;
+border: 10px solid var(--bg-main);
+
+}
+
+.menu-div{
+  background-color:var(--bg-menu-div);
+  width: 97%;
+  height: 34px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 10px 5px;
+  padding: 5px;
+
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-card);
+  width: 23%;
+  height: 35%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.card-img{
+ width: 40%;
+ border-radius: 38%;
+ opacity: 70%;
+}
+
+.card-plate{
+  padding: 1px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card-price{
+  padding: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-light);
+}
+

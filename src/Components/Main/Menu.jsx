@@ -33,6 +33,7 @@ export default function Menu (){
         {menu.filter(menu => menu.tipo === "desayuno" ).map((dato) => (
 
             <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
             <CardTitle className="card-plate">{dato.producto}</CardTitle>
             <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
             </CardBody>
@@ -45,7 +46,7 @@ export default function Menu (){
         {menu.filter(menu => menu.tipo === "almuerzo" ).map((dato) => (
 
             <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
-           
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
             <CardTitle className="card-plate">{dato.producto}</CardTitle>
             <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
             </CardBody>
@@ -58,7 +59,7 @@ export default function Menu (){
         {menu.filter(menu => menu.tipo === "extra" ).map((dato) => (
 
             <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
-            
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
             <CardTitle className="card-plate">{dato.producto}</CardTitle>
             <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
             </CardBody>
@@ -71,7 +72,7 @@ export default function Menu (){
         {menu.filter(menu => menu.tipo === "acompañamientos" ).map((dato) => (
 
             <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
-           
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
             <CardTitle className="card-plate">{dato.producto}</CardTitle>
             <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
             </CardBody>
@@ -84,7 +85,7 @@ export default function Menu (){
         {menu.filter(menu => menu.tipo === "bebida" ).map((dato) => (
 
             <CardBody onClick={ addPlate } className="card-body" key={dato.id}>
-            
+            <CardImg className="card-img" src={dato.imagen}></CardImg>
             <CardTitle className="card-plate">{dato.producto}</CardTitle>
             <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
             </CardBody>

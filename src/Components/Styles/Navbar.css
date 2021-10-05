@@ -1,0 +1,35 @@
+@import url('/src/index.css');
+
+.navbar-container{
+  font-family: 'Barlow SemiBold';
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+}
+
+.navbar-links{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+}
+
+.link{
+  
+  background-color: var(--bg-nav-btn);
+  color: var(--text-light);
+  padding: 5px;
+  width: 81px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 600;
+
+}
+

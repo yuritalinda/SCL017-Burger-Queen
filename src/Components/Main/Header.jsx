@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "./Navbar";
+import '../Styles/Header.css';
 
 export default function Header (){
   return(
-    <header>
-      <h2>
-        Hola! Yo soy el header :3!
-      </h2>
-      <div>
-        <Navbar />
+    <header className="header-container">
+     
+      <div className="logo-container">
+        <img className="logo" src="https://i.postimg.cc/zDWJ80JC/burger-queen-logo.png" alt="buger-queen-logo" />
       </div>
+
+
     </header>
   )
 }

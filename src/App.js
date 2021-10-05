@@ -1,15 +1,24 @@
-import './App.css';
+import './index.css';
+import Aside from './Components/Aside/Aside';
 import Header from './Components/Main/Header';
 import Menu from './Components/Main/Menu';
+import Navbar from './Components/Main/Navbar';
 
 function App() {
   return (
    
     <div className="app-container">
-      <h1>Soy la app y les presento a mis hijos: </h1>
 
-    <Header ></Header> 
-    <Menu ></Menu>  
+    <main className="app-main" >
+    <Header /> 
+    <Navbar />
+    <Menu />
+    </main>
+
+    <aside className="app-aside" >
+    <Aside />
+    </aside>
+    
     
     </div>
 
