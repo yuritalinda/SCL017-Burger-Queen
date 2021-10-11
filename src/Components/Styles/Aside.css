@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-width: 380px;
+  width: 400px;
   height: 700px;
 }
 
@@ -26,3 +26,4 @@
   height: 450px;
   border-radius: 100px;
 }
+

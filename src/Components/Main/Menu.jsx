@@ -14,27 +14,20 @@ import {
 export default function Menu (){
 
   const [menu, setMenu] = useState([]);
+  
 
   useEffect(() => {
-    const newState = setMenu(data.menu)
+    const newState = setMenu(data.menu);
+
+
     return (newState) 
   }, [])
 
-  useEffect(() => {
-    const addPlate = (plate)=>{
 
-      const existe=menu.find(x=>x.id===plate.id);
-      if (existe){
-        const pepito=plate;
-        
-  
-      }
-    }
-    return () => {
-      console.log(pepito);
-    }
-  }, [menu])
-   
+  const addPlate = (a)=>{
+    console.log(a);
+    
+  }
   
 ;
 
@@ -45,9 +38,9 @@ export default function Menu (){
 
         {menu.filter(menu => menu.tipo === "desayuno" ).map((dato) => (
 
-            <CardBody onClick={ addPlate(dato) } className="card-body" key={dato.id}>
+            <CardBody onClick={ () => addPlate(dato)} className="card-body" key={dato.id}>
             <CardImg className="card-img" src={dato.imagen}></CardImg>
-            <CardTitle className="card-plate">{dato.producto}</CardTitle>
+            <CardTitle  className="card-plate">{dato.producto}</CardTitle>
             <CardSubtitle className="card-price">$. {dato.precio}</CardSubtitle>
             </CardBody>
 

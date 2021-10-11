@@ -1,11 +1,12 @@
 import React from "react";
-import '../Styles/Aside.css'
-import AsideWelcome from "./AsideWelcome";
+import '../Styles/Aside.css';
+import OrderList from "./OrderList.jsx";
 
-export default function OrderList (){
+
+export default function Aside (){
   return(
     <aside className="aside-container">
-      <AsideWelcome />
+      <OrderList />
     </aside>
   )
 }
